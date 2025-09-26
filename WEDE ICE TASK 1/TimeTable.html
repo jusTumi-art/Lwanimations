@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISD TimeTable</title>
+    <style>
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 18px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 28px;
+}
+table.timetable {
+  width: 100%;
+  border-collapse: collapse;   /* borders join together */
+  table-layout: fixed;         /* columns share width evenly unless spanned */
+}
+.timetable th, .timetable td {
+  border: 2px solid #000;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;       /* long text will wrap inside cell */
+  height: 80px;                /* set a row height for nice boxes */
+}
+.timetable thead th {
+  font-weight: 600;
+  font-size: 14px;
+}
+.day-col {
+  width: 8%;
+  font-size: 24px;
+  font-weight: 700;
+}
+.course {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sub {
+  display: block;
+  font-size: 12px;
+  margin-top: 6px;
+}
+.small {
+  font-size: 10px;
+  color: #333;
+}
+
+    </style>
+</head>
+<body>
+
+<body>
+  <h1>DISD0601 - Year 1 GR 1</h1>
+
+  <table class="timetable">
+    <thead>
+      <tr>
+        <th></th> <!-- empty top-left (for day labels) -->
+        <th>08:00-08:50<br><span class="small">08:00 - 08:45</span></th>
+        <th>09:00-09:50<br><span class="small">09:00 - 09:45</span></th>
+        <th>10:00-10:50<br><span class="small">10:00 - 10:45</span></th>
+        <th>11:00-11:50<br><span class="small">11:00 - 11:45</span></th>
+        <th>12:00-12:50<br><span class="small">12:00 - 12:45</span></th>
+        <th>13:00-13:50<br><span class="small">13:00 - 13:45</span></th>
+        <th>14:00-14:50<br><span class="small">14:00 - 14:45</span></th>
+        <th>15:00-15:50<br><span class="small">15:00 - 15:45</span></th>
+        <th>16:00-16:50<br><span class="small">16:00 - 16:45</span></th>
+      </tr>
+    </thead>
+
+    <tbody>
+  <!-- Monday -->
+  <tr>
+    <td class="day-col">Mo</td>
+    <!-- OPSY5121 spans the first 3 time slots (08:00 - 10:50) -->
+    <td colspan="3">
+      <div class="course">OPSY5121 <span class="sub">LR608 — S Siyaya</span></div>
+    </td>
+    <td></td>
+    <!-- PROG6112 spans 3 time slots (12:00 - 14:50) -->
+    <td colspan="3">
+      <div class="course">PROG6112 <span class="sub">PCLab301 — Samkeliso Jwara</span></div>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!-- Tuesday -->
+  <tr>
+    <td class="day-col">Tu</td>
+    <td></td>
+    <td colspan="2">
+      <div class="course">ITPP5112 <span class="sub">LR601 — M Boitumelo</span></div>
+    </td>
+    <td colspan="2">
+      <div class="course">WEDE5020 <span class="sub">PCLab308 — Rhulani Kobeni</span></div>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!-- Wednesday -->
+  <tr>
+    <td class="day-col">We</td>
+    <td></td>
+    <td></td>
+    <td colspan="1"></td>
+    <td colspan="1">
+      <div class="course">ITPP5112 <span class="sub">LR701 — M Boitumelo</span></div>
+    </td>
+    <td></td>
+    <td colspan="2">
+      <div class="course">WEDE5020 <span class="sub">PCLab501 — Rhulani Kobeni</span></div>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <!-- Thursday -->
+  <tr>
+    <td class="day-col">Th</td>
+    <td></td>
+    <td></td>
+    <td colspan="3">
+      <div class="course">OPSY5121 <span class="sub">LR601 — S Siyaya</span></div>
+    </td>
+    <td colspan="3">
+      <div class="course">PROG6112 <span class="sub">PCLab407 — Samkeliso Jwara</span></div>
+    </td>
+    <td></td>
+  </tr>
+
+  <!-- Friday -->
+  <tr>
+    <td class="day-col">Fr</td>
+    <!-- empty row for Friday (no classes shown in the image) -->
+    <td colspan="9"></td>
+  </tr>
+    </tbody>
+  </table>
+</body>
+
+    
+</body>
+</html>
