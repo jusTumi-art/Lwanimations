@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Lwanimations Artwork 01: Creative art piece.">
   <title>Artwork 06 | Lwanimations</title>
+
+  <!-- Missing Google Font added (same as other pages) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -14,6 +20,10 @@
     <nav>
       <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="lwanimations logo">
       <h1 class="logo-text">Lwanimations</h1>
+
+      <!-- REQUIRED FOR JS -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation"></button>
+
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="about_Us.html">About</a></li>
@@ -40,14 +50,13 @@
     <!-- Artwork description -->
     <div class="art-description">
       <p>
-        <!-- Add a more detailed description of the artwork here -->
         This piece captures the beauty, confidence, and vibrancy of the subject, using bold colors and expressive brushstrokes.
       </p>
     </div>
 
     <!-- Navigation buttons -->
     <div class="artwork-buttons">
-        <a href="artwork_05.html" class="btn">Previous Artwork</a>
+      <a href="artwork_05.html" class="btn">Previous Artwork</a>
       <a href="artwork_gallery.html" class="btn">Back to Gallery</a>
     </div>
   </section>
@@ -63,5 +72,9 @@
     </p>
   </footer>
 
+  <!-- REQUIRED FOR JS -->
+  <div id="nav-overlay"></div>
+
+  <script src="../js/scripts.js" defer></script>
 </body>
 </html>

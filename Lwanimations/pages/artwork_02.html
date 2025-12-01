@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lwanimations Artwork 01: Creative art piece.">
+  <meta name="description" content="Artwork 02 - Surreal illustration exploring themes of mortality and transformation through a striking creature skull composition.">
   <title>Artwork 02 | Lwanimations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -12,17 +15,23 @@
   <!-- HEADER / NAVIGATION -->
   <header>
     <nav>
+      <!-- MOBILE MENU BUTTON -->
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+
       <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="lwanimations logo">
       <h1 class="logo-text">Lwanimations</h1>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="about_Us.html">About</a></li>
-        <li><a href="artwork_gallery.html">Gallery</a></li>
+        <li><a href="artwork_gallery.html">Art Gallery</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="news_blog.html">Blog</a></li>
         <li><a href="contact_us.html">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- OVERLAY FOR MOBILE MENU -->
+    <div id="overlay" class="overlay"></div>
   </header>
 
 <main>
@@ -30,7 +39,7 @@
   <section class="artwork-detail">
     <div class="section-header">
       <h3>Artwork 02</h3>
-      <p><strong>Illustration of a skull being held up by a hand.</strong></p>
+      <p><strong>Illustration of a creature skull being held aloft, surreal and thought-provoking.</strong></p>
     </div>
 
     <div class="image-frame">
@@ -40,14 +49,17 @@
     <!-- Artwork description -->
     <div class="art-description">
       <p>
-        <!-- Add a more detailed description of the artwork here -->
-        This piece captures the beauty, confidence, and vibrancy of the subject, using bold colors and expressive brushstrokes.
+        This haunting yet beautiful piece explores the intersection of mortality and artistry. 
+        A severed creature head somewhere between human and mythical is presented trophy-like by a solitary hand emerging from darkness. 
+        The composition invites viewers to contemplate themes of transformation, memory, and what remains after life. 
+        The surreal quality is enhanced by the stark contrast and dramatic presentation, making this piece both unsettling and mesmerizing. 
+        It's a meditation on impermanence wrapped in bold visual storytelling, challenging conventional beauty while maintaining an undeniable aesthetic power.
       </p>
     </div>
 
     <!-- Navigation buttons -->
     <div class="artwork-buttons">
-        <a href="artwork_01.html" class="btn">Previous Artwork</a>
+      <a href="artwork_01.html" class="btn">Previous Artwork</a>
       <a href="artwork_gallery.html" class="btn">Back to Gallery</a>
       <a href="artwork_03.html" class="btn">Next Artwork</a>
     </div>
@@ -63,6 +75,6 @@
       <a href="mailto:info@lwanimations.co.za">Email Us</a>
     </p>
   </footer>
-
+  <script src="../js/scripts.js" defer></script>
 </body>
 </html>

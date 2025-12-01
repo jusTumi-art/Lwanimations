@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lwanimations Artwork 01: Creative art piece.">
+  <meta name="description" content="Artwork 03 - Powerful illustration celebrating body positivity and Black femininity against a vibrant red backdrop.">
   <title>Artwork 03 | Lwanimations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -12,17 +15,24 @@
   <!-- HEADER / NAVIGATION -->
   <header>
     <nav>
+
+      <!-- MOBILE MENU BUTTON -->
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+
       <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="lwanimations logo">
       <h1 class="logo-text">Lwanimations</h1>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="about_Us.html">About</a></li>
-        <li><a href="artwork_gallery.html">Gallery</a></li>
+        <li><a href="artwork_gallery.html">Art Gallery</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="news_blog.html">Blog</a></li>
         <li><a href="contact_us.html">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- OVERLAY FOR MOBILE MENU -->
+    <div id="overlay" class="overlay"></div>
   </header>
 
 <main>
@@ -30,7 +40,7 @@
   <section class="artwork-detail">
     <div class="section-header">
       <h3>Artwork 03</h3>
-      <p><strong>Illustration of a black woman with a puffy white afro, full of life and expression.</strong></p>
+      <p><strong>Illustration of a big-bodied black woman against a deep red background, highlighting strength and presence.</strong></p>
     </div>
 
     <div class="image-frame">
@@ -40,14 +50,18 @@
     <!-- Artwork description -->
     <div class="art-description">
       <p>
-        <!-- Add a more detailed description of the artwork here -->
-        This piece captures the beauty, confidence, and vibrancy of the subject, using bold colors and expressive brushstrokes.
+        Against a passionate crimson backdrop, this piece powerfully celebrates curves, confidence, and unapologetic presence.
+        The subject takes up space boldly and beautifully, challenging narrow beauty standards with every brushstroke. 
+        The deep red background amplifies the emotional intensity, creating a sense of warmth, power, and vitality. 
+        This artwork is a love letter to body positivity and Black femininity, refusing to diminish or apologize for occupying space. 
+        It's both intimate and monumental reminder that all bodies deserve to be seen, celebrated, and immortalized in art. 
+        The bold composition speaks to strength found not in conformity, but in embracing one's authentic self.
       </p>
     </div>
 
     <!-- Navigation buttons -->
     <div class="artwork-buttons">
-        <a href="artwork_02.html" class="btn">Previous Artwork</a>
+      <a href="artwork_02.html" class="btn">Previous Artwork</a>
       <a href="artwork_gallery.html" class="btn">Back to Gallery</a>
       <a href="artwork_04.html" class="btn">Next Artwork</a>
     </div>
@@ -63,6 +77,6 @@
       <a href="mailto:info@lwanimations.co.za">Email Us</a>
     </p>
   </footer>
-
+  <script src="../js/scripts.js" defer></script>
 </body>
 </html>

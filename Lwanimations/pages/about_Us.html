@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Lwanimations – our story, mission, vision, and the people behind the art.">
-  <title>Lwanimations | About Us</title>
-  <link rel="stylesheet" href="../css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the story behind Lwanimations - where creativity meets street art culture. Learn about our mission to bring art to every street." />
+  <meta name="keywords" content="Lwanimations, about us, art brand, South African artist, street art, creative brand story" />
+  <title>About Lwanimations | Our Story, Mission & Vision</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body class="about">
 
   <!-- HEADER / NAVIGATION -->
   <header>
-    <nav>
-      <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="Lwanimations logo">
-      <h1 class="logo-text">Lwanimations</h1>
+    <nav role="navigation" aria-label="Main navigation">
+      <a class="brand" href="../index.html" aria-label="Lwanimations Home">
+        <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="Lwanimations logo" />
+        <span class="logo-text">Lwanimations</span>
+      </a>
+
+      <!-- SEARCH (script expects id="gallery-search") -->
+      <div class="nav-search" role="search">
+        <label for="gallery-search" class="sr-only">Search artworks and products</label>
+        <input id="gallery-search" type="search" placeholder="Search..." aria-label="Search artworks and products" />
+        <button id="searchBtn" type="button" aria-label="Search">&#x1F50D;</button>
+      </div>
+
+      <!-- MOBILE HAMBURGER (script expects class "mobile-nav-toggle") -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- NAV LINKS (script expects nav ul structure without extra wrapper) -->
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="about_us.html" class="active">About</a></li>
-        <li><a href="artwork_gallery.html">Gallery</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="news_blog.html">Blog</a></li>
-        <li><a href="contact_us.html">Contact</a></li>
+        <li><a href="./about_Us.html" class="active">About</a></li>
+        <li><a href="./artwork_gallery.html">Art Gallery</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./news_blog.html">Blog</a></li>
+        <li><a href="./contact_us.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <!-- ABOUT US HEADER -->
-    <section class="section-header">
+    <section class="section-header" id="about-header">
       <h3>About Lwanimations</h3>
       <p><strong>Discover our story, mission, vision, and the people behind the art.</strong></p>
     </section>
@@ -36,7 +57,7 @@
     <section class="links-grid">
       <div class="link-card">
         <h3>Our Story</h3>
-        <p>It really all started with a hoodie. I made art, and one day I realised I could use adult money to buy a hoodie and paint it. After years of creating digital art and learning the craft of printing on clothing, <strong>Lwanimations</strong> was born. Today, it keeps growing into more than a brand – it’s a verb for spreading creativity everywhere.</p>
+        <p>It really all started with a hoodie. I made art, and one day I realised I could use adult money to buy a hoodie and paint it. After years of creating digital art and learning the craft of printing on clothing, <strong>Lwanimations</strong> was born. Today, it keeps growing into more than a brand — it's a verb for spreading creativity everywhere.</p>
       </div>
 
       <div class="link-card">
@@ -60,11 +81,13 @@
   <footer>
     <p>&copy; 2025 Lwanimations. All rights reserved.</p>
     <p>
-      <a href="https://www.instagram.com/lwanimations/" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@lwanimations" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/lwanimations/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@lwanimations" target="_blank" rel="noopener">TikTok</a>
       <a href="mailto:info@lwanimations.co.za">Email Us</a>
     </p>
   </footer>
 
+  <!-- Correct script path & filename -->
+  <script src="../js/scripts.js" defer></script>
 </body>
 </html>

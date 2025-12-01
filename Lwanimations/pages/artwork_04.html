@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lwanimations Artwork 01: Creative art piece.">
-  <title>Artwork 04 | Lwanimations</title>
+  <meta name="description" content="Artwork 04 - Expressive portrait celebrating Black beauty and natural hair artistry with vibrant colors and bold composition.">
+  <meta name="keywords" content="Lwanimations, Black art, portrait illustration, afro art, contemporary African art">
+  <title>Artwork 04 | Lwanimations Art Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -12,17 +16,23 @@
   <!-- HEADER / NAVIGATION -->
   <header>
     <nav>
-      <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="lwanimations logo">
+      <!-- MOBILE MENU BUTTON -->
+      <button id="menu-toggle" class="menu-toggle">☰</button>
+
+      <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="Lwanimations logo">
       <h1 class="logo-text">Lwanimations</h1>
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="about_Us.html">About</a></li>
-        <li><a href="artwork_gallery.html">Gallery</a></li>
+        <li><a href="artwork_gallery.html">Art Gallery</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="news_blog.html">Blog</a></li>
         <li><a href="contact_us.html">Contact</a></li>
       </ul>
     </nav>
+
+    <!-- OVERLAY FOR MOBILE MENU -->
+    <div id="overlay" class="overlay"></div>
   </header>
 
 <main>
@@ -30,24 +40,23 @@
   <section class="artwork-detail">
     <div class="section-header">
       <h3>Artwork 04</h3>
-      <p><strong>Illustration of a black woman with a puffy white afro, full of life and expression.</strong></p>
+      <p><strong>Bold expression of natural beauty and artistic confidence.</strong></p>
     </div>
 
     <div class="image-frame">
-      <img src="../Images/gallery/art_piece_04.jpg" alt="Illustration of black woman with puffy white afro">
+      <img src="../Images/gallery/art_piece_04.jpg" alt="Vibrant portrait illustration celebrating natural beauty">
     </div>
 
     <!-- Artwork description -->
     <div class="art-description">
       <p>
-        <!-- Add a more detailed description of the artwork here -->
-        This piece captures the beauty, confidence, and vibrancy of the subject, using bold colors and expressive brushstrokes.
+        This piece continues our exploration of natural beauty through vibrant color and expressive line work. The composition radiates confidence and joy, capturing a moment of pure self-assurance that resonates with viewers. Using a bold color palette and dynamic brushwork, the artwork transforms a simple portrait into a statement about identity and self-love. The energetic style reflects the Lwanimations philosophy of turning everyday emotions into visual celebrations. Each stroke carries intention, building up layers of meaning while maintaining a sense of spontaneity and freshness that keeps the piece feeling alive and immediate.
       </p>
     </div>
 
     <!-- Navigation buttons -->
     <div class="artwork-buttons">
-        <a href="artwork_03.html" class="btn">Previous Artwork</a>
+      <a href="artwork_03.html" class="btn">Previous Artwork</a>
       <a href="artwork_gallery.html" class="btn">Back to Gallery</a>
       <a href="artwork_05.html" class="btn">Next Artwork</a>
     </div>
@@ -63,6 +72,6 @@
       <a href="mailto:info@lwanimations.co.za">Email Us</a>
     </p>
   </footer>
-
+  <script src="../js/scripts.js" defer></script>
 </body>
 </html>

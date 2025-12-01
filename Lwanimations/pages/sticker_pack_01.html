@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore Lwanimations sticker packs and bring fun designs to your everyday life.">
+  <meta name="description" content="Sticker Pack 1 from Lwanimations - Fun and unique street art stickers to brighten up notebooks, laptops, and more.">
   <title>Sticker Pack 1 | Lwanimations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
@@ -14,10 +19,14 @@
     <nav>
       <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="Lwanimations logo">
       <h1 class="logo-text">Lwanimations</h1>
+
+      <!-- REQUIRED FOR JS -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation"></button>
+
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
         <li><a href="about_Us.html">About</a></li>
-        <li><a href="artwork_gallery.html">Gallery</a></li>
+        <li><a href="artwork_gallery.html">Art Gallery</a></li>
         <li><a href="products.html">Products</a></li>
         <li><a href="news_blog.html">Blog</a></li>
         <li><a href="contact_us.html">Contact</a></li>
@@ -39,16 +48,13 @@
           <img src="../Images/products/sticker_pack_01.jpg" alt="Sticker Pack 1 preview">
         </div>
         <h3>Sticker Pack 1</h3>
-        <p>Fun and unique street art stickers to brighten up notebooks, laptops, and more.</p>
-        <a href="sticker_pack_01.html" class="btn">View Sticker</a>
+        <p>Fun and unique street art stickers to brighten up notebooks, laptops, and more. Each pack includes vibrant, expressive designs that capture the playful energy of Lwanimations.</p>
       </div>
-
-      <!-- Optionally add more related sticker previews here -->
     </div>
 
     <!-- Navigation Buttons -->
     <div class="artwork-buttons">
-      <a href="stickers_gallery.html" class="btn">Back to Stickers Gallery</a>
+      <a href="products.html" class="btn">Back to Products</a>
       <a href="sticker_pack_02.html" class="btn">Next Sticker Pack</a>
     </div>
   </section>
@@ -64,5 +70,9 @@
     </p>
   </footer>
 
+  <!-- REQUIRED FOR JS -->
+  <div id="nav-overlay"></div>
+
+  <script src="../js/scripts.js" defer></script>
 </body>
 </html>

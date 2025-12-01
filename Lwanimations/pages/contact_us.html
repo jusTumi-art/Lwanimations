@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Lwanimations for questions, collaborations, or general inquiries.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Lwanimations for questions, collaborations, or general inquiries." />
+  <meta name="keywords" content="Lwanimations, contact, inquiries, collaborations, art" />
   <title>Lwanimations | Contact Us</title>
-  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body class="contact">
 
   <!-- HEADER / NAVIGATION -->
   <header>
-    <nav>
-      <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="Lwanimations logo">
-      <h1 class="logo-text">Lwanimations</h1>
+    <nav role="navigation" aria-label="Main navigation">
+      <a class="brand" href="../index.html" aria-label="Lwanimations Home">
+        <img class="logo" src="../Images/logo/Lwanimations_logo.png" alt="Lwanimations logo" />
+        <span class="logo-text">Lwanimations</span>
+      </a>
+
+      <!-- SEARCH (script expects id="gallery-search") -->
+      <div class="nav-search" role="search">
+        <label for="gallery-search" class="sr-only">Search artworks and products</label>
+        <input id="gallery-search" type="search" placeholder="Search..." aria-label="Search artworks and products" />
+        <button id="searchBtn" type="button" aria-label="Search">&#x1F50D;</button>
+      </div>
+
+      <!-- MOBILE HAMBURGER (script expects class "mobile-nav-toggle") -->
+      <button class="mobile-nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- NAV LINKS (no extra wrapper) -->
       <ul class="nav-links">
         <li><a href="../index.html">Home</a></li>
-        <li><a href="about_Us.html">About</a></li>
-        <li><a href="artwork_gallery.html">Gallery</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="news_blog.html">Blog</a></li>
-        <li><a href="contact_us.html" class="active">Contact</a></li>
+        <li><a href="./about_Us.html">About</a></li>
+        <li><a href="./artwork_gallery.html">Gallery</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./news_blog.html">Blog</a></li>
+        <li><a href="./contact_us.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <!-- CONTACT INTRO -->
-    <section class="section-header">
+    <section class="section-header" id="contact-header">
       <h3>Get in Touch</h3>
       <p><strong>We’d love to hear from you! Whether you have a question about our work, want to collaborate, or just want to say hello — send us a message below.</strong></p>
     </section>
@@ -46,17 +69,25 @@
     <section class="links-grid">
       <div class="link-card">
         <h3>Send Us a Message</h3>
-        <form action="#" method="post">
+
+        <!-- note: id="contact-form" required by script -->
+        <form id="contact-form" action="#" method="post" novalidate>
           <label for="name">Your Name:</label>
           <input type="text" id="name" name="name" required>
+          <span class="error-message" id="name-error" aria-live="polite"></span>
 
           <label for="email">Your Email:</label>
           <input type="email" id="email" name="email" required>
+          <span class="error-message" id="email-error" aria-live="polite"></span>
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
+          <span class="error-message" id="message-error" aria-live="polite"></span>
 
           <button type="submit" class="btn">Send Message</button>
+
+          <!-- success container (script shows message here) -->
+          <div id="success-message" class="success-message" aria-live="polite"></div>
         </form>
       </div>
     </section>
@@ -66,11 +97,13 @@
   <footer>
     <p>&copy; 2025 Lwanimations. All rights reserved.</p>
     <p>
-      <a href="https://www.instagram.com/lwanimations/" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@lwanimations" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/lwanimations/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@lwanimations" target="_blank" rel="noopener">TikTok</a>
       <a href="mailto:info@lwanimations.co.za">Email Us</a>
     </p>
   </footer>
 
+  <!-- Correct script path & filename (must match your JS file) -->
+  <script src="../js/scripts.js" defer></script>
 </body>
 </html>
